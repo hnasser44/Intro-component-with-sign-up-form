@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+     background-image: url(/images/bg-intro-mobile.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: var(--Red);
+     margin: 1.25rem;
+     text-align: center;
+
+}
+
+.container {
+     max-width: 700px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     min-height: 100vh;
+     margin-top: -4em;
+}
+
+.left-content {
+     padding: 4em;
+     color: white;
+}
+
+.left-content h1 {
+     margin-bottom: .5em;
+     font-weight: bolder;
+}
+
+.left-content p {
+      opacity: 0.8;
+}
+
+.right-content {
+     min-width: 100%;
+     border-radius: 10px;
+     padding: 1.25rem;
+    
+}
+
+form input {
+     padding: 1em;
+     width: 100%; 
+     border: 1px solid var(--GrayishBlue);
+     font-family: inherit;    
+     font-weight: bold;  
+     border-radius: 10px
+}
+
+.form-box {
+     background-color: white;
+     padding: 1.25rem;
+     border-radius: 10px;
+     box-shadow: 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.blue-box {
+     background-color: var(--Blue);
+     margin-bottom: 1.4em;
+     border-radius: 10px;
+     padding: 1em;
+     font-size: 13px;
+     color: white;
+     font-weight: bolder;
+     box-shadow: 0px 6px rgba(0, 0, 0, 0.2);
+}
+.blue-box span {
+     opacity: 0.8;
+}
+
+
+ #btn {
+     border: none;
+     background-color: var(--Green);
+     border-radius: 5px;
+     width: 100%;
+     padding: 1.5em;
+     color: white;
+     font-family: 'Poppins';
+     letter-spacing: 1.5px;
+     cursor: pointer;
+}
+
+.right-content h4 {
+     font-size: .7em;
+     margin-top: 1em;
+     opacity: 0.8;
+     color: var(--GrayishBlue);
+}
+
+.right-content h4 a {
+     color: var(--Red);
+     text-decoration: none;
+}
+
+form span{
+    font-size: .7em;
+    color: var(--Red);
+    font-weight: bold;
+    margin-left: 8em;    
+}
+
+form img {
+        transform: translateX(2.2em);
+        margin-top: 10px;    
+        margin-bottom: -10px;
+        
+}
+
+.fname_hide_test, .lname_hide_test, .email_hide_test, .password_hide_test{
+     display: none;
+}
+
+
+
+.fname_hidden, .lname_hidden, .email_hidden, .password_hidden {
+     display: none;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 2em; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 700px) {
+    body {
+         background-image: url(/images/bg-intro-desktop.png);
+    }
+    
+    .container {
+        display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         max-height: 100vh;
+         width: 100%;
+         margin: auto;
+    }  
+    .left-content h1{
+        margin-right: 2em;
+         width: 10em;
+         font-size: 3em;
+    }
+}
